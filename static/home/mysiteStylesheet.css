@@ -59,7 +59,7 @@ p{
 
     /*text-align: center;*/
     background-color: white;
-    height: 420px;
+    height: 450px;
     margin: 15px 10px 10px 10px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -103,7 +103,7 @@ p{
     border-top: ridge;
     border-top-color: darkgrey;
     border-width: 0.1px;
-    height: 270px;
+    height: 300px;
     margin: 0px 10px 10px 10px;
     color: black;
     text-align: center;
