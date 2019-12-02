@@ -132,6 +132,42 @@
                 </div>
                 <div class="col-sm-10">
                 <p style="text-align: justify;">
+                <b style= " text-decoration: underline;">High Speed 8b/10b SerDes Transceiver</b> <br>
+		The 8b/10b SerDes Transceiver is a duplex 4 channel transceiver capable of working with individual channels or all
+		 the four channels together for Serial Transmission. The Transceiver has an asynchronous FIFO interface to accept or 
+		output one byte of data from or to a parallel bus. The transmitter contains an 8b/10b encoder and a serializer module. As the data goes valid, input 8 bits of parallel data is fed into a 
+		8b/10 encoder pipelined with 5 stages. The encoder encodes the 8 bit data into 10 bit data and also runs a disparity checker.
+		 The encoded data is then serialized for transmission with a complemented load line for dc balance. The receiver contains a clock 
+		recovery unit, deserialization unit, DC balance Input Buffer, clock divider unit and the 10b/8b decoder unit pipelined with 5 stages.
+		 As the serial data is received, clock recovery unit samples the clock to capture best samples and utilizes this for deserialization. 
+		This is used to synchronize between the parallel data blocks running at 125 MHz and the serial data blocks running at 1.25 GHz. The deserialized 
+		10 bits data is fed into decoder along with running disparity and is converted into 8 bit data which is transferred to an asynchronous FIFO interface
+		 waiting to be accessed by a parallel bus. It is formally verified using SynmbiYosys with SMT BMC engine. <br>	
+		<b>Software Used: &nbsp; </b> IVerilog, Verilator, Magic, Yosys, SymbiYosys, Qflow, GTK Wave, NG Spice, X Circuit.<br>
+                <b>Languages Used: &nbsp; </b> Verilog, System Verilog, C++, Perl, Tcl.
+		</p>
+                </div>
+	    
+	    	<div class="col-sm-2">
+                <img src="/static/home/images/uc.png " class="image img-responsive" />
+                </div>
+                <div class="col-sm-10">
+                <p style="text-align: justify;">
+                <b style= " text-decoration: underline;">Wishbone - AXI Stream Controller</b> <br>
+		The Wishbone - AXI Stream controller is used to interface AXI Stream to Wishbone bus specification 3.0. The controller is capable of 
+		controlling 8 masters and 16 slaves to interface with a ariety of peripherals. The interface utilizes an asynchronous FIFO design with dual port 
+		RAM block and 3 stages of Flip-Flops as Synchronizers between the different clock domains. It is optimized for MCP and formally verified using
+		SynbiYosys with SMT BMC engine.<br>	
+		<b>Software Used: &nbsp; </b> IVerilog, Verilator, Magic, Yosys, SymbiYosys, Qflow, GTK Wave, NG Spice, X Circuit.<br>
+                <b>Languages Used: &nbsp; </b> Verilog, System Verilog, C++, Perl, Tcl.
+		</p>
+                </div>
+	    
+	    	<div class="col-sm-2">
+                <img src="/static/home/images/uc.png " class="image img-responsive" />
+                </div>
+                <div class="col-sm-10">
+                <p style="text-align: justify;">
                 <b style= " text-decoration: underline;">Mini Field Programmable Logic Array</b> <br>
 		The Mini-FPLA (Field Programmable Logic Array) consists of a matrix of R X C programmable logic units (PLUs). 
 		The objective of this project is to design a FPLA maximizing the number of PLUs and thereby maximizing the number 
